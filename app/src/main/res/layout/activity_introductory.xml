@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroductoryActivity">
+
+    <!--设置参数不能超过父类 设置居中 -->
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:background="#80000000"
+        android:layout_height="900dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="400dp"
+        android:layout_height="800dp"
+        android:src="@drawable/inverse_logo"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/app_name"-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="910dp"-->
+<!--        android:src="@drawable/white_app_name"-->
+
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="428dp"
+        android:layout_height="873dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img"
+        app:layout_constraintVertical_bias="0"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/profile"
+
+
+        />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+        <Button
+            android:id="@+id/btn_mybut"
+            android:text="杭州薪资与职位名称"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:alpha="0.5"
+            />
+        <Button
+            android:id="@+id/btn_mybut2"
+            android:text="杭州学历要求与职位名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:alpha="0.5"
+            />
+        <Button
+            android:id="@+id/btn_mybut3"
+            android:text="杭州工作类型与工作年限"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:alpha="0.5"
+            />
+        <Button
+            android:id="@+id/btn_mybut4"
+            android:text="杭州工作类型与公司规模"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:alpha="0.5"
+            />
+        <Button
+            android:id="@+id/btn_mybut5"
+            android:text="深圳学历要求与工作地点"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:alpha="0.5"
+            />
+        <Button
+            android:id="@+id/btn_mybut6"
+            android:text="深圳学历要求与工作年限"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:alpha="0.5"
+            />
+        <Button
+            android:id="@+id/btn_mybut7"
+            android:text="深圳薪资与公司行业"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:alpha="0.5"
+            />
+        <Button
+            android:id="@+id/btn_mybut8"
+            android:text="深圳薪资与职位名称"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:alpha="0.5"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
